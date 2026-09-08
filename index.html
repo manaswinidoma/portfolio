@@ -262,7 +262,7 @@
         <span><a href="https://linkedin.com/in/domamanaswini" target="_blank">linkedin.com/in/domamanaswini</a></span>
       </div>
       <p class="hero-summary">
-        Master of Information Technology graduate (Data Analytics major) from the University of Technology Sydney — WAM 86.67, Dean's List 2026. I bring 2 years' production experience as a DevOps Engineer, running distributed infrastructure at scale (20+ Kubernetes clusters, 250+ VMs, 99.9% platform availability) alongside building ML and data pipelines across multiple projects. Outside of work, I'm a Gender Equity Ambassador at UTS, a hackathon regular (I earned a Social Champion Award at ANZ HackNow 2026 for driving the event's social media presence), and an active community volunteer around Sydney.
+        <strong>Data Analyst</strong> bridging high-scale infrastructure reliability with commercial business intelligence. Backed by enterprise experience supporting 1,200+ applications at IDFC FIRST Bank, I specialize in transforming raw transactional and behavioural datasets into clean SQL models, automated reporting pipelines, and executive dashboards. Outside of work, I'm a Gender Equity Ambassador at UTS, a hackathon regular (Social Champion Award, ANZ HackNow 2026), and an active Sydney community volunteer. Always drawn to work where data can uncover patterns and drive better decisions.
       </p>
     </div>
     <div class="hero-right">
@@ -312,6 +312,52 @@
     </div>
 
     <div class="project-grid" id="projectGrid">
+      <!-- Persona Development -->
+      <article class="card" data-cat="data">
+        <div class="card-top">
+          <div>
+            <h3>Data-Driven Persona Development — World Values Survey</h3>
+            <div class="ctx">Individual Capstone · UTS Industry Project · 2025–2026</div>
+          </div>
+          <span class="cat-tag tag-data">Data & ML</span>
+        </div>
+        <p class="desc">End-to-end unsupervised ML pipeline generating empirically validated user personas from national survey data.</p>
+        <details>
+          <summary>Full details</summary>
+          <ul class="bullets">
+            <li>Streamlined 572 survey variables to 290 clustering-ready features (49% reduction) via metadata-driven type classification and thematic domain filtering.</li>
+            <li>Achieved zero missing values across 2,870 survey respondents by applying type-aware encoding and KNN imputation (k=5) with full audit-trail reporting.</li>
+            <li>Delivered a stakeholder-optimised four-segment persona model (28–34% balanced share each) using K-means clustering, PCA dimensionality reduction and multi-metric validation across k=3–7.</li>
+          </ul>
+        </details>
+        <div class="tools">
+          <span class="tool-tag">Python</span><span class="tool-tag">scikit-learn</span><span class="tool-tag">K-Means</span>
+          <span class="tool-tag">PCA</span><span class="tool-tag">Feature Engineering</span>
+        </div>
+      </article>
+
+      <!-- Tableau -->
+      <article class="card" data-cat="viz">
+        <div class="card-top">
+          <div>
+            <h3>Australia Mineral Fuel Trade Analysis — Tableau Dashboards</h3>
+            <div class="ctx">Individual · UTS Data Visualisation · 2025</div>
+          </div>
+          <span class="cat-tag tag-viz">Data Visualization</span>
+        </div>
+        <p class="desc">Interactive Tableau dashboards and storyboard analyzing 36 years of Australian trade data.</p>
+        <details>
+          <summary>Full details</summary>
+          <ul class="bullets">
+            <li>Delivered four interactive Tableau dashboards and a narrative storyboard analysing 36 years (1988–2024) of Australian mineral fuel and lubricant trade data.</li>
+            <li>Streamlined export/import trend comparison across coal, petroleum and gas sub-categories by applying statistical and analytical transformations within Tableau visualisations.</li>
+            <li>Projected coal-export outlook to 2029, forecasting stabilisation at $100K–$125K million after a 3.5x surge (2015–2022), translating trends into stakeholder decision-support recommendations.</li>
+          </ul>
+        </details>
+        <div class="tools">
+          <span class="tool-tag">Tableau</span><span class="tool-tag">Forecasting</span><span class="tool-tag">Data Storytelling</span>
+        </div>
+      </article>
 
       <!-- CrowdVision -->
       <article class="card" data-cat="dl data devops">
@@ -327,144 +373,14 @@
         <details>
           <summary>Full details</summary>
           <ul class="bullets">
-            <li>Implemented MCNN from scratch (TensorFlow/Keras, OpenCV) as baseline and built a CSRNet comparison model (VGG-16, dilated convolutions) in PyTorch.</li>
-            <li>Selected Context-Aware Network (CAN) — VGG-16 backbone with multi-scale spatial pyramid pooling — as the production model: MAE 76.15 (dense) / 10.58 (sparse) on the 1,198-image ShanghaiTech benchmark, a 75% error reduction over the MCNN baseline.</li>
-            <li>Engineered the training pipeline converting head-coordinate annotations into Gaussian density maps, with automatic dense/sparse model routing at a 200-person expected-count threshold.</li>
-            <li>Designed and deployed a Django + Wagtail web app with server-side inference, image upload and real-time webcam analysis, configurable venue-capacity limits, and a tiered alert system (warning at 70% capacity, continuous flashing alert past 85%).</li>
-            <li>Authored the technical report and delivered the live product pitch and demo at the showcase.</li>
+            <li>Reduced crowd-counting error by 75% over an MCNN baseline, achieving MAE 76.15/10.58 using a PyTorch Context-Aware Network (VGG-16).</li>
+            <li>Streamlined model selection across MCNN, CSRNet and CAN architectures via benchmarking on 1,198 ShanghaiTech images (330,000+ heads), selecting CAN for production.</li>
+            <li>Automated tiered crowd-capacity alerts in a Django/Wagtail web app, flagging venues at 70% capacity and continuously past 85%.</li>
           </ul>
         </details>
         <div class="tools">
           <span class="tool-tag">PyTorch</span><span class="tool-tag">TensorFlow/Keras</span><span class="tool-tag">OpenCV</span>
           <span class="tool-tag">Django</span><span class="tool-tag">Wagtail</span><span class="tool-tag">VGG-16</span>
-        </div>
-      </article>
-
-      <!-- LifeShift -->
-      <article class="card" data-cat="ai devops">
-        <div class="card-top">
-          <div>
-            <h3>LifeShift — Agentic AI Retirement Planning Companion</h3>
-            <div class="ctx">Team "Now & Learn" · ANZ HackNow 2026 (DTA × ServiceNow) · Jul 2026</div>
-          </div>
-          <span class="cat-tag tag-ai">Agentic AI</span>
-        </div>
-        <span class="highlight-badge">Social Champion Award — 1 of 2 recipients across all teams</span>
-        <p class="desc">Agentic AI retirement-planning companion built on ServiceNow AI Agent Studio, Now Assist, and MCP integrations.</p>
-        <details>
-          <summary>Full details</summary>
-          <ul class="bullets">
-            <li>Owned persona development and the 5-stage experience mapping for the companion.</li>
-            <li>Researched and authored the DTA-aligned problem statement (2.8 million Australians retiring without adequate support) for the team's Solution Design document — the team's official submission for the program, which was reviewed and accepted.</li>
-            <li>Shaped the pitch narrative and delivered the live demo presentation to DTA executives and ServiceNow judges at the Grand Finale.</li>
-            <li>Won the Social Champion Award — one of only two recipients across all participating teams — for being the most active promoter of the event and ServiceNow on social media.</li>
-            <li>Completed a full-day Build Agent workshop on agentic AI and low-code development.</li>
-          </ul>
-        </details>
-        <div class="tools">
-          <span class="tool-tag">ServiceNow AI Agent Studio</span><span class="tool-tag">Now Assist</span>
-          <span class="tool-tag">MCP</span><span class="tool-tag">Agentic AI</span>
-        </div>
-      </article>
-
-      <!-- FreshBasket -->
-      <article class="card" data-cat="devops">
-        <div class="card-top">
-          <div>
-            <h3>FreshBasket — Highly Available AWS Cloud Architecture</h3>
-            <div class="ctx">Individual · UTS Cloud Computing & SaaS · 2026</div>
-          </div>
-          <span class="cat-tag tag-devops">Cloud & DevOps</span>
-        </div>
-        <p class="desc">Highly available, auto-scaling AWS infrastructure design for an e-commerce platform handling demand spikes.</p>
-        <details>
-          <summary>Full details</summary>
-          <ul class="bullets">
-            <li>Architected a multi-AZ VPC (10.0.0.0/16) across two Availability Zones with public subnetting, an Internet Gateway, and route tables.</li>
-            <li>Designed an Application Load Balancer with continuous health checks distributing traffic across EC2 instances in two AZs to eliminate single points of failure.</li>
-            <li>Configured an Auto Scaling Group (min 2 / max 8 EC2 instances) with CPU-based scaling policies (scale-out at 60%, scale-in at 30%) from a custom AMI.</li>
-            <li>Produced a full architecture diagram and disaster-recovery justification for each component.</li>
-          </ul>
-        </details>
-        <div class="tools">
-          <span class="tool-tag">AWS VPC</span><span class="tool-tag">EC2</span><span class="tool-tag">Auto Scaling</span>
-          <span class="tool-tag">ALB</span><span class="tool-tag">High Availability</span>
-        </div>
-      </article>
-
-      <!-- Community Connect -->
-      <article class="card" data-cat="devops">
-        <div class="card-top">
-          <div>
-            <h3>Community Connect — Salesforce Force.com PaaS App</h3>
-            <div class="ctx">Group Project · UTS Cloud Computing & SaaS · 2026</div>
-          </div>
-          <span class="cat-tag tag-devops">Cloud & DevOps</span>
-        </div>
-        <p class="desc">Low-code volunteer-coordination platform on Salesforce Force.com, replacing spreadsheet/phone-based coordination for a simulated nonprofit.</p>
-        <details>
-          <summary>Full details</summary>
-          <ul class="bullets">
-            <li>Designed a platform for 200+ annual events and 1,500+ volunteers with a 5-object custom data model (Volunteer, Event, Shift, Shift Assignment, Certificate) and validation rules.</li>
-            <li>Automated shift-confirmation emails, 48-hour pre-shift reminders, automated task reassignment on cancellation, and certificate generation via Process Builder and Visualforce.</li>
-            <li>Implemented role-based access control using custom profiles and Organisation-Wide Defaults.</li>
-            <li>Built native reporting for volunteer-hours, event participation and certificate issuance.</li>
-          </ul>
-        </details>
-        <div class="tools">
-          <span class="tool-tag">Salesforce</span><span class="tool-tag">Force.com</span><span class="tool-tag">Process Builder</span>
-          <span class="tool-tag">RBAC</span>
-        </div>
-      </article>
-
-      <!-- Persona Development -->
-      <article class="card" data-cat="data">
-        <div class="card-top">
-          <div>
-            <h3>Data-Driven Persona Development — World Values Survey</h3>
-            <div class="ctx">Individual Capstone · UTS Industry Project · 2025–2026</div>
-          </div>
-          <span class="cat-tag tag-data">Data & ML</span>
-        </div>
-        <p class="desc">End-to-end unsupervised ML pipeline generating empirically validated user personas from national survey data.</p>
-        <details>
-          <summary>Full details</summary>
-          <ul class="bullets">
-            <li>Built a Python pipeline generating personas from 2,870 survey respondents across 572 variables (World Values Survey Wave 7, Australia & NZ).</li>
-            <li>Engineered metadata-driven feature selection reducing 572 variables to 290 clustering-ready features.</li>
-            <li>Built a data-quality pipeline with type-aware encoding and KNN imputation (k=5), achieving zero missing values with full audit-trail reporting.</li>
-            <li>Applied K-Means clustering with PCA, evaluating k=3–7 against Silhouette, Davies-Bouldin, Calinski-Harabasz and Elbow Method.</li>
-            <li>Selected a stakeholder-optimized k=4 solution — three balanced segments (28–34% each) profiled across 10 value domains, with 97.8% cluster stability.</li>
-          </ul>
-        </details>
-        <div class="tools">
-          <span class="tool-tag">Python</span><span class="tool-tag">scikit-learn</span><span class="tool-tag">K-Means</span>
-          <span class="tool-tag">PCA</span><span class="tool-tag">Feature Engineering</span>
-        </div>
-      </article>
-
-      <!-- IoT Network Security -->
-      <article class="card" data-cat="data net">
-        <div class="card-top">
-          <div>
-            <h3>IoT Network Intrusion Detection & Preprocessing Pipeline</h3>
-            <div class="ctx">Individual · UTS Fundamentals of Data Analytics · 2024</div>
-          </div>
-          <span class="cat-tag tag-data">Data & ML</span>
-        </div>
-        <p class="desc">End-to-end classification pipeline detecting IoT network intrusions from raw traffic data.</p>
-        <details>
-          <summary>Full details</summary>
-          <ul class="bullets">
-            <li>Performed EDA and attribute-level profiling on a 48-feature, 15,600-record IoT network-traffic dataset.</li>
-            <li>Built preprocessing pipelines (binning, normalization, discretization, one-hot encoding) tailored for tree-based vs. distance-based models.</li>
-            <li>Tuned multi-class classifiers (Random Forest, Decision Tree, SVM, KNN, MLP) on a highly imbalanced dataset with F1-macro/AUC-ROC evaluation.</li>
-            <li>Achieved mean cross-validated F1 of 0.9085 (Random Forest) and 0.892 (Decision Trees), outperforming SVM (0.772).</li>
-          </ul>
-        </details>
-        <div class="tools">
-          <span class="tool-tag">Python</span><span class="tool-tag">scikit-learn</span><span class="tool-tag">Random Forest</span>
-          <span class="tool-tag">Class Imbalance</span><span class="tool-tag">IoT Security</span>
         </div>
       </article>
 
@@ -481,16 +397,86 @@
         <details>
           <summary>Full details</summary>
           <ul class="bullets">
-            <li>Built a regression pipeline on 17,564 vehicle listings; cleaned 19,237 raw records, removing 1,673 price outliers.</li>
-            <li>One-hot encoding expanded the feature space to 93 dimensions; extracted structured features from unstructured engine-spec strings.</li>
-            <li>Optimized Random Forest via GridSearchCV across 108 configurations with 5-fold cross-validation.</li>
-            <li>Improved R² from 0.256 (baseline) to 0.728 on held-out test data (MAE $4,390) — a 40.2-point R² gain.</li>
-            <li>Proposed a deployment plan with quarterly retraining triggers based on model-degradation thresholds.</li>
+            <li>Improved price-prediction accuracy from R²=0.256 to R²=0.728 (a 40.2-percentage-point gain, MAE $4,390) across 17,564 vehicle listings using tuned Random Forest regression.</li>
+            <li>Streamlined 19,237 raw records into a 93-dimension feature set by removing 1,673 price outliers, applying median imputation and one-hot encoding unstructured engine-spec text.</li>
+            <li>Optimised Random Forest hyperparameters across 108 GridSearchCV configurations with 5-fold cross-validation, outperforming linear-regression and baseline models on held-out test data.</li>
           </ul>
         </details>
         <div class="tools">
           <span class="tool-tag">Python</span><span class="tool-tag">Random Forest</span><span class="tool-tag">GridSearchCV</span>
           <span class="tool-tag">Regression</span>
+        </div>
+      </article>
+
+      <!-- IoT Network Security -->
+      <article class="card" data-cat="data net">
+        <div class="card-top">
+          <div>
+            <h3>IoT Network Intrusion Detection & Preprocessing Pipeline</h3>
+            <div class="ctx">Individual · UTS Fundamentals of Data Analytics · 2024</div>
+          </div>
+          <span class="cat-tag tag-data">Data & ML</span>
+        </div>
+        <p class="desc">End-to-end classification pipeline detecting IoT network intrusions from raw traffic data.</p>
+        <details>
+          <summary>Full details</summary>
+          <ul class="bullets">
+            <li>Streamlined preprocessing design across a 48-feature, 15,600-record IoT dataset by classifying variables into scale-based encoding groups for tree- and distance-based models.</li>
+            <li>Outperformed SVM by 13.7 F1 points, tuning Random Forest (F1 0.9085) and Decision Tree classifiers against class-imbalance-aware metrics for multi-class intrusion detection.</li>
+            <li>Resolved feature-scale inconsistencies via equi-depth binning, normalisation and one-hot encoding, then presented findings and security-operations recommendations in a written and oral defence.</li>
+          </ul>
+        </details>
+        <div class="tools">
+          <span class="tool-tag">Python</span><span class="tool-tag">scikit-learn</span><span class="tool-tag">Random Forest</span>
+          <span class="tool-tag">Class Imbalance</span><span class="tool-tag">IoT Security</span>
+        </div>
+      </article>
+
+      <!-- Event DB -->
+      <article class="card" data-cat="db">
+        <div class="card-top">
+          <div>
+            <h3>Event Management Database Design</h3>
+            <div class="ctx">Individual · UTS Database · 2024</div>
+          </div>
+          <span class="cat-tag tag-db">Database</span>
+        </div>
+        <span class="highlight-badge">High Distinction</span>
+        <p class="desc">Normalized relational database modeling end-to-end event, venue, staffing and catering management.</p>
+        <details>
+          <summary>Full details</summary>
+          <ul class="bullets">
+            <li>Achieved a High Distinction grade for a normalised relational database design, evidencing rigorous Entity-Relationship modelling and documentation quality.</li>
+            <li>Streamlined end-to-end event management (events, venues, attendees, staff assignments, budgets, catering) into a single normalised Entity-Relationship Diagram schema.</li>
+            <li>Resolved complex many-to-many relationships (event registration, employee-event assignment, multi-item catering orders) while enabling budget-tracking entities for financial reporting by event.</li>
+          </ul>
+        </details>
+        <div class="tools">
+          <span class="tool-tag">SQL</span><span class="tool-tag">ERD</span><span class="tool-tag">Normalization</span>
+        </div>
+      </article>
+
+      <!-- NewsBrief -->
+      <article class="card" data-cat="nlp">
+        <div class="card-top">
+          <div>
+            <h3>NewsBrief — Abstractive News Summarization System</h3>
+            <div class="ctx">Team of 2 · UTS NLP Algorithms · 2026</div>
+          </div>
+          <span class="cat-tag tag-nlp">NLP</span>
+        </div>
+        <p class="desc">Transformer-based abstractive summarization system deployed as an interactive web application.</p>
+        <details>
+          <summary>Full details</summary>
+          <ul class="bullets">
+            <li>Delivered NewsBrief, a fine-tuned BART (facebook/bart-large-cnn) summariser achieving ROUGE-1 42.44% and ROUGE-L 30.52% across 1,000 evaluated Inshorts news articles.</li>
+            <li>Streamlined BART inference to 1.22 seconds per article across 4,396 cleaned pairs, tuning beam search (size 4, length penalty 2.0, no-repeat trigrams).</li>
+            <li>Automated real-time summarisation in a Streamlit web app integrated with NewsAPI, validated across seven manual test cases covering truncation and network-failure edge cases.</li>
+          </ul>
+        </details>
+        <div class="tools">
+          <span class="tool-tag">BART</span><span class="tool-tag">Hugging Face</span><span class="tool-tag">Streamlit</span>
+          <span class="tool-tag">ROUGE</span>
         </div>
       </article>
 
@@ -507,9 +493,9 @@
         <details>
           <summary>Full details</summary>
           <ul class="bullets">
-            <li>Diagnosed and resolved severe overfitting in a baseline ResNet50 model on a 10-class dog-breed classification task (1,712 images).</li>
-            <li>Redesigned the architecture (truncated ResNet50, custom conv layers, GlobalAveragePooling2D, Dropout) and applied data augmentation, lifting test accuracy from 85.47% to 91.86%.</li>
-            <li>Implemented and compared Faster R-CNN (ResNet50-FPN) and YOLOv5 on a 5-class plant-growth-stage dataset with multi-format annotations.</li>
+            <li>Resolved severe overfitting in a baseline ResNet50 model via architecture redesign, truncated layers, GlobalAveragePooling2D and Dropout regularisation, for 10-class dog-breed classification.</li>
+            <li>Increased test accuracy from 85.47% to 91.86% (a 6.4-point gain) on 1,712 images via flip, rotation, shift, zoom and shear augmentation.</li>
+            <li>Outperformed Faster R-CNN (mAP50 0.903) with YOLOv5 (mAP50 0.951, 8x faster training) on a 5-class plant-growth dataset with multi-format annotations.</li>
           </ul>
         </details>
         <div class="tools">
@@ -531,85 +517,13 @@
         <details>
           <summary>Full details</summary>
           <ul class="bullets">
-            <li>Classified 5,000 handwritten symbol images (10 classes) using 3 feature-extraction methods (raw pixels, LBP, HOG) × 2 classifiers (SVM, ANN).</li>
-            <li>Tuned SVM (RBF kernel) and ANN (Sequential, Adam optimizer, early stopping) hyperparameters.</li>
-            <li>Achieved top accuracy of 99.07% (SVM + HOG features), benchmarking trade-offs across all 6 combinations.</li>
+            <li>Achieved 99.07% classification accuracy (SVM + HOG features) benchmarking six feature-classifier combinations across 5,000 handwritten mathematical symbol images spanning 10 classes.</li>
+            <li>Streamlined feature engineering across raw-pixel, LBP and HOG extraction methods using stratified train/test splitting in Python and NumPy.</li>
+            <li>Optimised SVM (RBF kernel) and ANN (Sequential architecture, Adam optimiser, early stopping) hyperparameters, quantifying accuracy and computational trade-offs across all six combinations.</li>
           </ul>
         </details>
         <div class="tools">
           <span class="tool-tag">SVM</span><span class="tool-tag">HOG</span><span class="tool-tag">LBP</span><span class="tool-tag">ANN</span>
-        </div>
-      </article>
-
-      <!-- NewsBrief -->
-      <article class="card" data-cat="nlp">
-        <div class="card-top">
-          <div>
-            <h3>NewsBrief — Abstractive News Summarization System</h3>
-            <div class="ctx">Team of 2 · UTS NLP Algorithms · 2026</div>
-          </div>
-          <span class="cat-tag tag-nlp">NLP</span>
-        </div>
-        <p class="desc">Transformer-based abstractive summarization system deployed as an interactive web application.</p>
-        <details>
-          <summary>Full details</summary>
-          <ul class="bullets">
-            <li>Built on a fine-tuned BART model (facebook/bart-large-cnn) with tokenization, beam-search decoding and inference.</li>
-            <li>Evaluated summary quality against human references using ROUGE metrics.</li>
-            <li>Analyzed text-length distributions and token statistics on the Inshorts News Summary dataset to inform model configuration.</li>
-            <li>Deployed an interactive Streamlit app integrated with NewsAPI to summarize live news in real time.</li>
-          </ul>
-        </details>
-        <div class="tools">
-          <span class="tool-tag">BART</span><span class="tool-tag">Hugging Face</span><span class="tool-tag">Streamlit</span>
-          <span class="tool-tag">ROUGE</span>
-        </div>
-      </article>
-
-      <!-- Tableau -->
-      <article class="card" data-cat="viz">
-        <div class="card-top">
-          <div>
-            <h3>Australia Mineral Fuel Trade Analysis — Tableau Dashboards</h3>
-            <div class="ctx">Individual · UTS Data Visualisation · 2025</div>
-          </div>
-          <span class="cat-tag tag-viz">Data Visualization</span>
-        </div>
-        <p class="desc">Interactive Tableau dashboards and storyboard analyzing 36 years of Australian trade data.</p>
-        <details>
-          <summary>Full details</summary>
-          <ul class="bullets">
-            <li>Designed four interactive Tableau dashboards and a narrative storyboard covering 1988–2024 mineral fuel/lubricant trade data.</li>
-            <li>Built comparative export/import visualizations across coal, petroleum and gas sub-categories.</li>
-            <li>Produced a forecast dashboard projecting coal export outlook through 2029.</li>
-          </ul>
-        </details>
-        <div class="tools">
-          <span class="tool-tag">Tableau</span><span class="tool-tag">Forecasting</span><span class="tool-tag">Data Storytelling</span>
-        </div>
-      </article>
-
-      <!-- Event DB -->
-      <article class="card" data-cat="db">
-        <div class="card-top">
-          <div>
-            <h3>Event Management Database Design</h3>
-            <div class="ctx">Individual · UTS Database · 2024</div>
-          </div>
-          <span class="cat-tag tag-db">Database</span>
-        </div>
-        <span class="highlight-badge">High Distinction</span>
-        <p class="desc">Normalized relational database modeling end-to-end event, venue, staffing and catering management.</p>
-        <details>
-          <summary>Full details</summary>
-          <ul class="bullets">
-            <li>Designed a normalized ER model covering events, venues, attendees, staff assignments, budgets and catering logistics.</li>
-            <li>Modeled complex many-to-many relationships (event registration, employee-event assignment, multi-item catering orders).</li>
-            <li>Designed budget-tracking entities linking events to venue, catering and miscellaneous costs.</li>
-          </ul>
-        </details>
-        <div class="tools">
-          <span class="tool-tag">SQL</span><span class="tool-tag">ERD</span><span class="tool-tag">Normalization</span>
         </div>
       </article>
 
@@ -626,13 +540,61 @@
         <details>
           <summary>Full details</summary>
           <ul class="bullets">
-            <li>Co-authored requirements and design docs defining 10+ user stories covering login, registration, enrollment and grade calculation.</li>
-            <li>Designed core system functions (credential validation, ID generation, enrollment/removal, grade calculation) mapped to explicit software functions.</li>
-            <li>Applied correctness, consistency, completeness and expandability criteria across the 4-person team.</li>
+            <li>Streamlined requirements analysis into 10+ user stories covering login, registration, subject enrolment and grade calculation for a student portal system.</li>
+            <li>Resolved core system logic (credential validation, student ID generation, enrolment/removal, grade calculation) by mapping each requirement to explicit software functions.</li>
+            <li>Delivered case-study requirements and design documentation as a 4-person team, satisfying rigorous software criteria to achieve a 95% High Distinction assessment mark.</li>
           </ul>
         </details>
         <div class="tools">
           <span class="tool-tag">Requirements Analysis</span><span class="tool-tag">SDLC</span><span class="tool-tag">Agile</span>
+        </div>
+      </article>
+
+      <!-- Community Connect -->
+      <article class="card" data-cat="devops">
+        <div class="card-top">
+          <div>
+            <h3>Community Connect — Salesforce Force.com PaaS App</h3>
+            <div class="ctx">Group Project · UTS Cloud Computing & SaaS · 2026</div>
+          </div>
+          <span class="cat-tag tag-devops">Cloud & DevOps</span>
+        </div>
+        <p class="desc">Low-code volunteer-coordination platform on Salesforce Force.com, replacing spreadsheet/phone-based coordination for a simulated nonprofit.</p>
+        <details>
+          <summary>Full details</summary>
+          <ul class="bullets">
+            <li>Automated volunteer-coordination workflows for 200+ annual events and 1,500+ volunteers via Process Builder and Visualforce email templates, replacing manual scheduling.</li>
+            <li>Streamlined a 5-object Force.com data model (Volunteer, Event, Shift, Assignment, Certificate) with master-detail relationships and age/scheduling validation rules.</li>
+            <li>Secured personal volunteer data with role-based access control (custom profiles, Organisation-Wide Defaults) while delivering native reporting on volunteer-hours, participation and certificate issuance.</li>
+          </ul>
+        </details>
+        <div class="tools">
+          <span class="tool-tag">Salesforce</span><span class="tool-tag">Force.com</span><span class="tool-tag">Process Builder</span>
+          <span class="tool-tag">RBAC</span>
+        </div>
+      </article>
+
+      <!-- FreshBasket -->
+      <article class="card" data-cat="devops">
+        <div class="card-top">
+          <div>
+            <h3>FreshBasket — Highly Available AWS Cloud Architecture</h3>
+            <div class="ctx">Individual · UTS Cloud Computing & SaaS · 2026</div>
+          </div>
+          <span class="cat-tag tag-devops">Cloud & DevOps</span>
+        </div>
+        <p class="desc">Highly available, auto-scaling AWS infrastructure design for an e-commerce platform handling demand spikes.</p>
+        <details>
+          <summary>Full details</summary>
+          <ul class="bullets">
+            <li>Scaled EC2 capacity 2→8 instances via an Auto Scaling Group with CPU-based policies (60%/30% thresholds) on a custom AMI.</li>
+            <li>Eliminated single points of failure across two Availability Zones using an Application Load Balancer with continuous EC2 health checks.</li>
+            <li>Secured a multi-AZ VPC (10.0.0.0/16) with public subnetting, an Internet Gateway and route tables, documented via a disaster-recovery architecture diagram.</li>
+          </ul>
+        </details>
+        <div class="tools">
+          <span class="tool-tag">AWS VPC</span><span class="tool-tag">EC2</span><span class="tool-tag">Auto Scaling</span>
+          <span class="tool-tag">ALB</span><span class="tool-tag">High Availability</span>
         </div>
       </article>
 
@@ -649,10 +611,9 @@
         <details>
           <summary>Full details</summary>
           <ul class="bullets">
-            <li>Built emulated network topologies using Mininet (Linux namespaces, virtual switches) running real services (web servers, DNS, SSH).</li>
-            <li>Captured and analyzed live traffic with Wireshark — PDU inspection, display filtering, TCP vs. UDP performance analysis.</li>
-            <li>Benchmarked throughput with iperf3 and configured dynamic routing (RIP, OSPF), simulating link failures and re-routing.</li>
-            <li>Implemented client-server apps in Python using raw TCP/UDP sockets.</li>
+            <li>Quantified TCP vs UDP throughput and latency using iperf3 across emulated Mininet topologies, benchmarking a 35% throughput variance and packet-loss trade-offs via Wireshark.</li>
+            <li>Automated Linux-namespace network emulation in Mininet, running live web, DNS and SSH services across virtual switches and routers for protocol testing.</li>
+            <li>Resolved multi-router failover behaviour with RIP and OSPF dynamic routing, simulating link failures and measuring sub-5-second route convergence across topologies.</li>
           </ul>
         </details>
         <div class="tools">
@@ -661,6 +622,30 @@
         </div>
       </article>
 
+      <!-- LifeShift -->
+      <article class="card" data-cat="ai devops">
+        <div class="card-top">
+          <div>
+            <h3>LifeShift — Agentic AI Retirement Planning Companion</h3>
+            <div class="ctx">Team "Now & Learn" · ANZ HackNow 2026 (DTA × ServiceNow) · Jul 2026</div>
+          </div>
+          <span class="cat-tag tag-ai">Agentic AI</span>
+        </div>
+        <span class="highlight-badge">Social Champion Award — 1 of 2 recipients across all teams</span>
+        <p class="desc">Agentic AI retirement-planning companion built on ServiceNow AI Agent Studio, Now Assist, and MCP integrations.</p>
+        <details>
+          <summary>Full details</summary>
+          <ul class="bullets">
+            <li>Won the Social Champion Award — one of only two recipients across all ANZ HackNow 2026 teams — for being the most active promoter of the event and ServiceNow on social media.</li>
+            <li>Shaped persona development and the 5-stage experience mapping on ServiceNow AI Agent Studio, Now Assist and MCP for 2.8 million underserved retirees.</li>
+            <li>Delivered the Grand Finale pitch and demo to DTA executives and ServiceNow judges, having authored three sections of the accepted Solution Design document.</li>
+          </ul>
+        </details>
+        <div class="tools">
+          <span class="tool-tag">ServiceNow AI Agent Studio</span><span class="tool-tag">Now Assist</span>
+          <span class="tool-tag">MCP</span><span class="tool-tag">Agentic AI</span>
+        </div>
+      </article>
     </div>
   </section>
 
